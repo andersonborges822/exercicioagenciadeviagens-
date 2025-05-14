@@ -1,43 +1,49 @@
+/* === ESTILO BASE - PARA TODAS AS TELAS === */
 body {
-  background-color: #fefefe; /*cor da pagina*/
-  font-family: sans-serif; /*fonte*/
-  max-width: 1280px; /*aumentar pixels*/
-  margin: auto; /*margem automatica ao dar zoom*/
+  background-color: #fefefe;
+  font-family: sans-serif;
+  max-width: 1280px;
+  margin: auto;
 }
+
 .kaushan-script-regular {
   font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-style: normal;
 }
-.btn {
-  padding: 0.5rem 1rem; /*espacamento dentro do bloco*/
-  border-radius: 0.5rem; /*arrendondar os cantos*/
-  background-color: rgb(1, 255, 124); /*fundo de elemento*/
-  color: #ffffff; /*cor da letra*/
+
+.btn, .btn1 {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(1, 255, 124);
+  color: #ffffff;
 }
-.btn:hover {
-  background-color: #ffee00; /*cor do botao quando passa o mousse*/
-  color: rgb(255, 1, 1); /*cor da letra quando passa o mousse*/
+
+.btn:hover, .btn1:hover {
+  background-color: #ffee00;
+  color: rgb(255, 1, 1);
 }
+
 header {
   background-color: #ffffff;
   padding: 0.8rem;
 }
+
 .nave {
   text-align: center;
 }
+
 .layout h3 {
   text-align: center;
   padding-right: 3rem;
 }
+
 .src {
-  width: 55px; /* Largura do ícone */
-  height: auto; /* Mantém proporção */
-  vertical-align: middle; /* Centraliza o ícone com o texto */
+  width: 55px;
+  height: auto;
+  vertical-align: middle;
 }
-.nave {
-  text-align: center; /*centralizar botoes*/
-}
+
 header a {
   text-decoration: none;
   color: rgb(0, 0, 0);
@@ -49,114 +55,96 @@ header a {
   color: #fefefe;
   text-align: center;
   background-color: darkorange;
-  margin: 10px auto; /*centraliza se necessario, com margem superior e inferior 10px*/
+  margin: 10px auto;
   width: 300px;
   padding: 5px;
   padding-bottom: 1rem;
   border-radius: 1rem;
 }
+
 .imagem-container {
   display: flex;
-  flex-direction: column; /* Coloca as linhas uma sobre a outra */
-  gap: 10px; /* Espaçamento entre as linhas */
+  flex-direction: column;
+  gap: 10px;
 }
 
 .row {
-  display: flex; /* Coloca as imagens lado a lado */
-  justify-content: center; /* Centraliza horizontalmente */
-  gap: 10px; /* Espaçamento entre as imagens */
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .imagem-container .row img {
-  /*aplicar somente as img dentro do container*/
-  height: auto; /* Proporcional */
-  width: 140px; /* Largura fixa */
+  height: auto;
+  width: 140px;
 }
 
-.coment {
-  text-align: center;
-  font-family: cursive;
-  color: darkorange;
-}
-.coment1 {
-  text-align: center;
-  font-family: cursive;
-  color: darkgrey;
-}
-element {
-  text-align: center;
-}
-.image1 img {
-  display: block; /*evitar espacos desnecessarios*/
-  height: auto; /*altura proporcional*/
-  margin: 10px auto; /*centraliza se necessario, com margem superior e inferior 10px*/
-  width: 300px; /*largura fixa*/
-}
-.image-content {
-  text-align: center;
-  color: darkgray;
-}
-.image-content h2 {
-  color: darkorange;
-}
-.btn1 {
-  padding: 0.5rem 1rem; /*espacamento dentro do bloco*/
-  border-radius: 0.5rem; /*arrendondar os cantos*/
-  background-color: rgb(1, 255, 124); /*fundo de elemento*/
-  color: #ffffff; /*cor da letra*/
-}
-.btn1:hover {
-  background-color: #ffee00; /*cor do botao quando passa o mousse*/
-  color: rgb(255, 1, 1); /*cor da letra quando passa o mousse*/
-}
-.coment2 {
-  text-align: center;
-  font-family: cursive;
-  color: darkorange;
-}
-.coment3 {
-  text-align: center;
-  font-family: cursive;
-  color: darkgrey;
-}
-.element2 {
-  text-align: center;
-}
-.gallery img {
-  display: block; /*evitar espacos desnecessarios*/
-  height: auto; /*altura proporcional*/
-  margin: 10px auto; /*centraliza se necessario, com margem superior e inferior 10px*/
-  width: 300px; /*largura fixa*/
-}
+.coment,
+.coment2,
 .coment4 {
   text-align: center;
   font-family: cursive;
   color: darkorange;
 }
+
+.coment1,
+.coment3 {
+  text-align: center;
+  font-family: cursive;
+  color: darkgrey;
+}
+
 .coment5 {
   text-align: center;
   font-family: cursive;
   color: rgb(0, 0, 0);
 }
+
+element,
+.element2 {
+  text-align: center;
+}
+
+.image1 img,
+.gallery img {
+  display: block;
+  height: auto;
+  margin: 10px auto;
+  width: 300px;
+}
+
+.image-content {
+  text-align: center;
+  color: darkgray;
+}
+
+.image-content h2 {
+  color: darkorange;
+}
+
 footer {
   margin-top: 2rem;
 }
+
 .footer-icons {
   text-align: center;
 }
+
 .footer-icons svg {
   width: 1.5rem;
   fill: rgb(0, 0, 0);
   margin-right: 1rem;
 }
+
 .footer-content {
   font-family: "Times New Roman", Times, serif;
   color: #080808;
   text-align: center;
 }
+
+/* === AJUSTES PARA TELAS MÉDIAS E GRANDES === */
 @media (min-width: 768px) {
   .layout {
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -166,12 +154,11 @@ footer {
     width: 1024px;
     max-width: 1024px;
     height: 68px;
-
-    /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
   }
+
   .logotipo {
     width: 1024px;
     height: 600px;
@@ -182,8 +169,8 @@ footer {
     align-self: stretch;
     flex-grow: 0;
   }
+
   .banner-content {
-    /* Auto layout */
     display: flex;
     flex-direction: column;
     align-items: center;
